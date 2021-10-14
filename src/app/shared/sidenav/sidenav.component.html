@@ -1,0 +1,32 @@
+
+<mat-drawer-container class="example-container">
+    <mat-drawer class="sidenav" mode="side" opened>
+        <mat-list>
+            <mat-list-item>
+                <a routerLink="/layout/home">
+                    <mat-icon>home</mat-icon>
+                    Home
+                </a>
+            </mat-list-item>
+            <mat-list-item>
+                <a routerLink="/layout/cursos">
+                    <mat-icon>school</mat-icon>
+                    Cursos
+                </a>
+            </mat-list-item>
+            <mat-list-item>
+                <a routerLink="/layout/forum">
+                    <mat-icon>forum</mat-icon>
+                    Forum
+                </a>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon>logout</mat-icon>
+                Logout
+            </mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
