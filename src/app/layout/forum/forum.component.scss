@@ -1,0 +1,83 @@
+.forum-header {
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.forum-header h1 {
+  margin-left: 100px;
+}
+.container {
+  // background-color: cadetblue;
+}
+.forum-temas {
+  display: flex;
+  flex-direction: column;
+  // background-color: coral;
+}
+.tema-programacao {
+  border: 1px solid;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  // background-color: darkorange;
+  margin-bottom: 10px;
+}
+.t-prog-icon {
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+}
+.t-prog-tags {
+  border-right: 1px solid;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+.tag-body {
+  display: flex;
+}
+.tag-body h5 {
+  background-color: #555;
+  color: #fff;
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+}
+.t-prog-topicos {
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  width: 10%;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+}
+.t-prog-acesso {
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+.t-prog-resp {
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+.forum-pesquisa {
+  // background-color: cyan;
+}
+.forum-tabela {
+  background-color: darkgreen;
+}

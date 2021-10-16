@@ -1,0 +1,29 @@
+.b-header {
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.barra-pesquisa {
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.b-p-left {
+  margin-bottom: -20px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.b-p-right {
+  margin-bottom: -20px;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}

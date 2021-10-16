@@ -1,3 +1,4 @@
+import { SidenavService } from '../../services/sidenav.service'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public sidenavservice: SidenavService) { }
 
   ngOnInit(): void {
   }
 
 }
+

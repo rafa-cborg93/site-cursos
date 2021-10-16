@@ -1,0 +1,28 @@
+<div class="b-header">
+  <p>Tópicos mais recentes</p>
+  <button class="btn btn-primary" color="primary">Criar novo tópico</button>
+</div>
+<div class="barra-pesquisa">
+  <div class="b-p-left">
+    <mat-form-field appearance="fill">
+      <select matNativeControl required>
+        <option value="volvo">Todas as categorias</option>
+        <option value="saab">Programação</option>
+        <option value="mercedes">Front-end</option>
+        <option value="audi">Back-end</option>
+      </select>
+    </mat-form-field>
+    <button mat-button>Todos</button>
+    <button mat-button>Sem reposta</button>
+    <button mat-button>Solucionados</button>
+  </div>
+  <div class="b-p-right">
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Pesquisa</mat-label>
+        <input type="text" matInput>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+</div>

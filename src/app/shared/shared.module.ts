@@ -10,14 +10,18 @@ import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
+import { TabelaForumComponent } from './tabela-forum/tabela-forum.component';
+import {MatFormField, MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    HeaderComponent, 
-    SidenavComponent,
+    HeaderComponent,
+    SidenavComponent, BarraPesquisaComponent, TabelaForumComponent,
   ],
   imports: [
     CommonModule,
@@ -27,13 +31,17 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    RouterModule
+    RouterModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   exports:[
     CardComponent,
-    HeaderComponent, 
+    HeaderComponent,
     SidenavComponent,
-    
+    BarraPesquisaComponent,
+    TabelaForumComponent,
+
     // modulos material
     MatCardModule,
     MatToolbarModule,
@@ -41,6 +49,8 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
+    MatFormField,
+    MatInputModule,
   ]
 })
 export class SharedModule { }
