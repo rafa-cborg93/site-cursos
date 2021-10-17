@@ -1,6 +1,3 @@
-<mat-toolbar>
-  Bem vindo, usuário
-</mat-toolbar>
 <div class="home-header">
   <mat-icon>school</mat-icon> <span>Formações</span>
   <h1>Explore o nosso conteúdo</h1>
@@ -16,72 +13,15 @@
       <p>Formações</p>
     </div>
   </div>
-  <div class="menu-programacao">
-    <div class="p-left">
-      <p>Programação</p>
-      <a href="#">Ver cursos</a>
-    </div>
-    <div class="right">
-      <ul>
-        <li>Java</li>
-        <li>C/C++</li>
-        <li>Javascript</li>
-        <li>PHP</li>
-      </ul>
-    </div>
-  </div>
-  <div class="menu-frontend">
-    <div class="f-left">
-      <p>Frontend</p>
-      <a href="#">Ver cursos</a>
-    </div>
-    <div class="right">
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React JS</li>
-        <li>Angular</li>
-      </ul>
-    </div>
-  </div>
-  <div class="menu-backend">
-    <div class="b-left">
-      <p>Backend</p>
-      <a href="#">Ver cursos</a>
-    </div>
-    <div class="right">
-      <ul>
-        <li>Java</li>
-        <li>.NET</li>
-        <li>Node JS</li>
-        <li>PHP</li>
-      </ul>
-    </div>
-  </div>
-  <div class="menu-devops">
-    <div class="d-left">
-      <p>DevOps</p>
-      <a href="#">Ver cursos</a>
-    </div>
-    <div class="right">
-      <ul>
-        <li>AWS</li>
-        <li>Azure</li>
-        <li>Docker</li>
-      </ul>
-    </div>
-  </div>
-  <div class="menu-automacao">
-    <div class="a-left">
-      <p>Automação</p>
-      <a href="#">Ver cursos</a>
-    </div>
-    <div class="right">
-      <ul>
-        <li>Arduino</li>
-        <li>Raspberry</li>
-        <li>CLP</li>
-      </ul>
-    </div>
-  </div>
+  <app-card-formacoes [tituloCurso]="'Programação'" [link]="'programacao'" [backgroundColor]="'#00c853'"
+    [borderLeft]="'4px solid #00c853'"></app-card-formacoes>
+  <app-card-formacoes [tituloCurso]="'Front-end'" [link]="'frontend'" [backgroundColor]="'#42a5f5'"
+    [borderLeft]="'4px solid #42a5f5'">
+  </app-card-formacoes>
+  <app-card-formacoes [tituloCurso]="'Back-end'" [link]="'backend'" [backgroundColor]="'#ff9800'"
+    [borderLeft]="'4px solid #ff9800'">
+  </app-card-formacoes>
+  <app-card-formacoes [tituloCurso]="'DevOps'" [link]="'devops'" [backgroundColor]="'#ef5350'"
+    [borderLeft]="'4px solid #ef5350'">
+  </app-card-formacoes>
 </div>

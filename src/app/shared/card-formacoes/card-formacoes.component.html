@@ -1,0 +1,11 @@
+<div class="menu-programacao">
+  <div class="p-left" [style.width]="leftWidth" [style.background-color]="backgroundColor">
+    <p>{{tituloCurso}}</p>
+    <a routerLink={{link}}>Ver cursos</a>
+  </div>
+  <div class="right" [style.border-left]="borderLeft" [style.width]="rightWidth">
+    <ul>
+      <li *ngFor="let cursos of cursosProgramacao">{{cursos.name}}</li>
+    </ul>
+  </div>
+</div>

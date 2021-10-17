@@ -1,21 +1,31 @@
-.container{
-    display: flex;
-    flex-direction: column;
+.cursos-header {
+  padding: 10px;
+  background-color: #1675d1;
+  margin-bottom: 30px;
 }
-.dashboard{
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
+.cursos-header mat-icon {
+  color: #fff;
+  margin-top: 5px;
 }
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 48%;
+.cursos-header span,
+h1,
+h3 {
+  color: #fff;
+  margin-left: 10px;
 }
-.right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 48%;
+.cursos-header h1 {
+  margin-top: 10px;
+  font-weight: 800;
+}
+.dashboard {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 48%;
 }

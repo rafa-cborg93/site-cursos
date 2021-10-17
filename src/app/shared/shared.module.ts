@@ -14,14 +14,13 @@ import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.componen
 import { TabelaForumComponent } from './tabela-forum/tabela-forum.component';
 import {MatFormField, MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
-
+import { CardFormacoesComponent } from './card-formacoes/card-formacoes.component';
 
 @NgModule({
   declarations: [
     CardComponent,
     HeaderComponent,
-    SidenavComponent, BarraPesquisaComponent, TabelaForumComponent,
+    SidenavComponent, BarraPesquisaComponent, TabelaForumComponent, CardFormacoesComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +40,8 @@ import {MatInputModule} from '@angular/material/input';
     SidenavComponent,
     BarraPesquisaComponent,
     TabelaForumComponent,
+    CardFormacoesComponent,
+
 
     // modulos material
     MatCardModule,

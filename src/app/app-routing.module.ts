@@ -7,7 +7,8 @@ const routes: Routes = [
   {
     path:'',
     redirectTo:'/layout/home',
-    pathMatch:'full'
+    pathMatch:'full',
+    data:{breadcrumb:'Home'}
   },
   {
     path:'',

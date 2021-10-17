@@ -11,15 +11,18 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component:HomeComponent
+    component:HomeComponent,
+    data:{breadcrumb:'home'}
   },
   {
     path:'cursos',
-    loadChildren: () => import('./cursos/cursos.module').then(m => m.CursosModule)
+    loadChildren: () => import('./cursos/cursos.module').then(m => m.CursosModule),
+    data:{breadcrumb: 'cursos'}
   },
   {
     path:'forum',
-    component:ForumComponent
+    component:ForumComponent,
+    data:{breadcrumb:'forum'}
   }
 ];
 

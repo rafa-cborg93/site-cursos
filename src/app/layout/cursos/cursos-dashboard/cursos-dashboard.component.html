@@ -1,12 +1,29 @@
+<div class="cursos-header">
+  <h1>Cursos</h1>
+  <h3>Clique na categoria desejada e acesse nossos cursos ministrados pelos melhores instrutores do mercado</h3>
+</div>
 <div class="container">
-    <div class="dashboard">
-        <div class="left">
-            <app-card [titulo]="'Frontend'" [conteudo]="'Veja nossos cursos de formação frontend'" [link]="'frontend'"></app-card>
-            <app-card [titulo]="'Backend'" [conteudo]="'Veja nossos cursos de formação backend'" [link]="'backend'"></app-card>
-        </div>
-        <div class="right">
-            <app-card [titulo]="'Automação'" [conteudo]="'Veja nossos cursos de automação residencial'" [link]="'automacao'"></app-card>
-            <app-card [titulo]="'DevOps'" [conteudo]="'Veja nossos cursos de DevOps'" [link]="'devops'"></app-card>
-        </div>
+  <div class="dashboard">
+    <div class="left">
+      <app-card-formacoes [tituloCurso]="'Programação'" [link]="'programacao'" [backgroundColor]="'#00c853'"
+        [borderLeft]="'4px solid #00c853'"></app-card-formacoes>
+      <app-card-formacoes [tituloCurso]="'Back-end'" [link]="'backend'" [backgroundColor]="'#ff9800'"
+        [borderLeft]="'4px solid #ff9800'">
+      </app-card-formacoes>
+      <!-- <app-card [titulo]="'Frontend'" [conteudo]="'Veja nossos cursos de formação frontend'" [link]="'frontend'"></app-card>
+      <app-card [titulo]="'Backend'" [conteudo]="'Veja nossos cursos de formação backend'" [link]="'backend'">
+      </app-card> -->
     </div>
+    <div class="right">
+      <app-card-formacoes [tituloCurso]="'Front-end'" [link]="'frontend'" [backgroundColor]="'#42a5f5'"
+        [borderLeft]="'4px solid #42a5f5'">
+      </app-card-formacoes>
+      <app-card-formacoes [tituloCurso]="'DevOps'" [link]="'devops'" [backgroundColor]="'#ef5350'"
+        [borderLeft]="'4px solid #ef5350'">
+      </app-card-formacoes>
+      <!-- <app-card [titulo]="'Automação'" [conteudo]="'Veja nossos cursos de automação residencial'" [link]="'automacao'">
+      </app-card>
+      <app-card [titulo]="'DevOps'" [conteudo]="'Veja nossos cursos de DevOps'" [link]="'devops'"></app-card> -->
+    </div>
+  </div>
 </div>

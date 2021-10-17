@@ -20,6 +20,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "angular-breadcrumbs": "^0.5.3",
+    "angular-crumbs": "^3.0.1",
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",

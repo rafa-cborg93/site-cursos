@@ -1,5 +1,5 @@
-<mat-drawer-container class="example-container">
-  <mat-drawer #drawer class="sidenav" mode="side" [opened]="this.sidenavservice.toggleNav.value">
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="sidenav" mode="side" [opened]="this.sidenavservice.toggleNav.value">
     <mat-list>
       <mat-list-item>
         <a routerLink="/layout/home">
@@ -24,8 +24,9 @@
         Logout
       </mat-list-item>
     </mat-list>
-  </mat-drawer>
-  <mat-drawer-content>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>Bem vindo, usuário bradcrumb</mat-toolbar>
     <router-outlet></router-outlet>
-  </mat-drawer-content>
-</mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>

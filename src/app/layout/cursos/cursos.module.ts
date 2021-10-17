@@ -6,6 +6,9 @@ import { CursosFrontendComponent } from './cursos-frontend/cursos-frontend.compo
 import { CursosDashboardComponent } from './cursos-dashboard/cursos-dashboard.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CursosComponent } from './cursos.component';
+import { CursosBackendComponent } from './cursos-backend/cursos-backend.component';
+import { CursosProgramacaoComponent } from './cursos-programacao/cursos-programacao.component';
+import { CursosDevopsComponent } from './cursos-devops/cursos-devops.component';
 
 
 
@@ -13,7 +16,10 @@ import { CursosComponent } from './cursos.component';
   declarations: [
     CursosFrontendComponent,
     CursosDashboardComponent,
-    CursosComponent
+    CursosComponent,
+    CursosBackendComponent,
+    CursosProgramacaoComponent,
+    CursosDevopsComponent
   ],
   imports: [
     CommonModule,
