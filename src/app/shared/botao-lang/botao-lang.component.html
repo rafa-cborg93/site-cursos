@@ -1,0 +1,12 @@
+<!-- <button mat-icon-button>
+  <mat-icon>language</mat-icon>
+  Lang
+</button> -->
+<button mat-button [matMenuTriggerFor]="menu" class="actmenu">
+  <mat-icon class="actmenu_icon">language</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <app-botao [btn_label]="'EN'"></app-botao>
+  <app-botao [btn_label]="'ES'"></app-botao>
+  <app-botao [btn_label]="'PT-BR'"></app-botao>
+</mat-menu>

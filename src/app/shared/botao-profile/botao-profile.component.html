@@ -1,0 +1,11 @@
+<button mat-button [matMenuTriggerFor]="menu" class="adf_sidebar_actmenu">
+  <mat-icon class="adf_sidebar_actmenu_icon">account_circle</mat-icon>
+  <mat-label class="adf_sidebar_actmenu_nome_usuario">user</mat-label>
+</button>
+<mat-menu #menu="matMenu">
+  <app-botao [btn_icon]="'account_circle'" [btn_label]="'Meu Perfil'"></app-botao>
+  <app-botao [btn_icon]="'help'" [btn_label]="'Ajuda'"></app-botao>
+  <mat-divider></mat-divider>
+  <app-botao [btn_icon]="'key'" [btn_label]="'Alterar senha'"></app-botao>
+  <app-botao [btn_icon]="'logout'" [btn_label]="'Logout'"></app-botao>
+</mat-menu>
