@@ -1,6 +1,6 @@
 <div class="login-content">
   <mat-card class="login-card">
-    <form action="">
+    <form [formGroup]="loginForm">
       <mat-card-header class="card-headers">
         <mat-card-title>
           <div class="logo-empresa">logo aqui</div>
@@ -9,15 +9,18 @@
       <mat-card-content class="card-login-controls">
         <div class="campo-login">
           <mat-form-field class="full-width">
-            <input matInput type="text" placeholder="username">
+            <input matInput 
+            formControlName="userName" type="text" placeholder="username">
           </mat-form-field>
+          <app-messages text="username is required!" *ngIf= "loginForm.get('userName')?.errors?.required"></app-messages>
         </div>
         <div class="campo-senha">
           <mat-form-field>
-            <input matInput type="password" placeholder="password">
+            <input matInput formControlName="password" type="password" placeholder="password">
           </mat-form-field>
+          <app-messages text="password is required!" *ngIf= "loginForm.get('password')?.errors?.required"></app-messages>
         </div>
-        <button class="login-button btn btn-primary">Entrar</button>
+        <button class="login-button btn btn-primary" [disabled]="loginForm.invalid">Entrar</button>
       </mat-card-content>
       <mat-divider></mat-divider>
       <mat-card-actions>

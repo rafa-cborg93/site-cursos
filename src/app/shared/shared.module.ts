@@ -19,12 +19,13 @@ import { CardForumComponent } from './card-forum/card-forum.component';
 import { BotaoProfileComponent } from './botao-profile/botao-profile.component';
 import { BotaoLangComponent } from './botao-lang/botao-lang.component';
 import { BotaoComponent } from './botao/botao.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     CardComponent,
     HeaderComponent,
-    SidenavComponent, BarraPesquisaComponent,  CardFormacoesComponent, CardForumComponent, BotaoProfileComponent, BotaoLangComponent, BotaoComponent,
+    SidenavComponent, BarraPesquisaComponent,  CardFormacoesComponent, CardForumComponent, BotaoProfileComponent, BotaoLangComponent, BotaoComponent, MessagesComponent,
   ],
   imports: [
     CommonModule,
@@ -49,6 +50,7 @@ import { BotaoComponent } from './botao/botao.component';
     CardForumComponent,
     BotaoProfileComponent,
     BotaoLangComponent,
+    MessagesComponent,
 
     // modulos material
     MatCardModule,
