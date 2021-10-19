@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabelaForumComponent } from './tabela-forum.component';
+import { CursosFrontendComponent } from './cursos-frontend.component';
 
-describe('TabelaForumComponent', () => {
-  let component: TabelaForumComponent;
-  let fixture: ComponentFixture<TabelaForumComponent>;
+describe('CursosFrontendComponent', () => {
+  let component: CursosFrontendComponent;
+  let fixture: ComponentFixture<CursosFrontendComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TabelaForumComponent ]
+      declarations: [ CursosFrontendComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TabelaForumComponent);
+    fixture = TestBed.createComponent(CursosFrontendComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

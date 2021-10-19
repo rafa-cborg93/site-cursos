@@ -11,7 +11,6 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
 import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
-import { TabelaForumComponent } from './tabela-forum/tabela-forum.component';
 import {MatFormField, MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenu, MatMenuModule} from '@angular/material/menu'
@@ -25,7 +24,7 @@ import { BotaoComponent } from './botao/botao.component';
   declarations: [
     CardComponent,
     HeaderComponent,
-    SidenavComponent, BarraPesquisaComponent, TabelaForumComponent, CardFormacoesComponent, CardForumComponent, BotaoProfileComponent, BotaoLangComponent, BotaoComponent,
+    SidenavComponent, BarraPesquisaComponent,  CardFormacoesComponent, CardForumComponent, BotaoProfileComponent, BotaoLangComponent, BotaoComponent,
   ],
   imports: [
     CommonModule,
@@ -46,7 +45,6 @@ import { BotaoComponent } from './botao/botao.component';
     HeaderComponent,
     SidenavComponent,
     BarraPesquisaComponent,
-    TabelaForumComponent,
     CardFormacoesComponent,
     CardForumComponent,
     BotaoProfileComponent,

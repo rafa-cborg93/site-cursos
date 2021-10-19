@@ -9,18 +9,37 @@ const routes: Routes = [
   
   {
     path:'',
-    redirectTo:'/layout/home',
+    redirectTo:'login',
     pathMatch:'full',
-    data:{breadcrumb:'Home'}
   },
   {
     path:'',
     component: AppComponent
   },
   {
+    path:'login',
+    component:LoginComponent,
+  },
+  {
     path:'layout',
+    component:LayoutComponent,
     loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
   }
+  // {
+  //   path:'',
+  //   redirectTo:'/layout/home',
+  //   pathMatch:'full',
+  //   data:{breadcrumb:'Home'}
+  // },
+  // {
+  //   path:'',
+  //   component: AppComponent
+  // },
+  // {
+  //   path:'layout',
+  //   loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
+  // }
+  ,
 ];
 
 @NgModule({

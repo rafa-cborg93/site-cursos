@@ -8,9 +8,11 @@ import { LayoutComponent } from './layout.component';
 
 
 const routes: Routes = [
-  
-      
-  
+  {
+    path:'',
+    redirectTo:'home',
+    pathMatch:'full'
+  },
   {
     path:'',
     component: LayoutComponent,
@@ -29,7 +31,8 @@ const routes: Routes = [
     path:'forum',
     component:ForumComponent,
     data:{breadcrumb:'forum'}
-  },{
+  },
+  {
     path:'login',
     component: LoginComponent
   }
